@@ -28,7 +28,34 @@ const App = () => {
         content: '',
         author: '',
         views: 0,
-        image: 'https://plus.unsplash.com/premium_photo-1718198501646-a95f049e39b5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image: 'https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      },
+      {
+        id: 3,
+        type: 'Article',
+        title: 'What if famous brands had regular fonts? Meet RegulaBrands!',
+        content: 'I\'ve worked in UX for the better part of a decade. From now on, I plan to rei...',
+        author: 'Sarthak Kamra',
+        views: 1400,
+        image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      },
+      {
+        id: 4,
+        type: 'Article',
+        title: 'What if famous brands had regular fonts? Meet RegulaBrands!',
+        content: 'I\'ve worked in UX for the better part of a decade. From now on, I plan to rei...',
+        author: 'Sarthak Kamra',
+        views: 1400,
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      },
+      {
+        id: 5,
+        type: 'Article',
+        title: 'What if famous brands had regular fonts? Meet RegulaBrands!',
+        content: 'I\'ve worked in UX for the better part of a decade. From now on, I plan to rei...',
+        author: 'Sarthak Kamra',
+        views: 1400,
+        image: 'https://plus.unsplash.com/premium_photo-1687119905438-0a0872a70c5b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       }
     ];
     setPosts(postsData);
