@@ -15,8 +15,8 @@ const Header = () => {
           <input type="text" placeholder="Search for your favorite groups in ATG" />
         </div>
         <div className="header1-account">
-          <a href="/create-account">Create account. <span>It's free!</span></a>
-          <button>Join the group</button>
+        <button>  <a href="/create-account">Create account. <span>It's free!</span></a></button>
+         
         </div>
       </div>
       <header className="header1">

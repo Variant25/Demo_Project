@@ -106,10 +106,12 @@
     display: none;
   }
 
-  .header1-account a {
+  .header1-account a span {
     display: none;
   }
-
+  .header1-account a {
+    color: #fff;
+  }
   .header1-account button {
     display: block;
     position: absolute; /* Position it absolutely relative to header1 */
