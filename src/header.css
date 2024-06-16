@@ -1,64 +1,171 @@
 /* src/Header.css */
-.header1 {
 
-    width: 100%;
-    background: url('./Rectangle 2.png') no-repeat center center;
-    background-size: cover;
-    color: #000;
-  }
-  
-  .header1-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    /* Semi-transparent background */
-  }
-  
-  .header1-logo img {
-    height: 15px;
-    margin-left: 20px;
-  }
-  
- .header1-search input{
-    background-color: #E5E5E5; 
-    width: 400px;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    
-  }
-  
-  .header1-account a {
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .header1-account span {
-    color: #0073b1; /* Blue color */
-  }
-  
-  .header1-content {
-    padding: 100px 20px;
+.header1 {
+  width: 100%;
+  background: url('./Rectangle 2.png') no-repeat center center;
+  background-size: cover;
+  color: #000;
+  position: relative; /* Make the header1 element the positioning context */
+}
+
+.header1-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header1-logo img {
+  height: 15px;
+  margin-left: 20px;
+}
+
+.header1-search input {
+  background-color: #E5E5E5;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.header1-account a,
+.header1-account button {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header1-account span {
+  color: #0073b1; /* Blue color */
+}
+
+.header1-content {
+  padding: 100px 20px;
   height: 200px;
-   
+}
+
+.header1-text h1 {
+  font-size: 36px;
+  margin-top: 150px;
+  margin-bottom: 0;
+  color: white;
+  margin-left: 200px;
+}
+
+.header1-text p {
+  font-size: 18px;
+  margin-left: 200px;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .header1-search input {
+    width: 300px;
   }
-  
-  .header1-text h1 {
-    font-size: 36px;
-    margin-top:150px;
-    margin-bottom: 0;
-    color: white;
-    margin-left: 200px;
-    
-  }
-  
+
+  .header1-text h1,
   .header1-text p {
-    font-size: 18px;
-    margin-left: 200px;
-    color: #fff;
-    margin-top: 0;
+    margin-left: 100px;
   }
- 
+}
+
+@media (max-width: 992px) {
+  .header1-search input {
+    width: 250px;
+  }
+
+  .header1-text h1,
+  .header1-text p {
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  .header1-text h1 {
+    font-size: 32px;
+  }
+
+  .header1-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header1-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header1-logo,
+  .header1-search {
+    display: none;
+  }
+
+  .header1-account a {
+    display: none;
+  }
+
+  .header1-account button {
+    display: block;
+    position: absolute; /* Position it absolutely relative to header1 */
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .header1-content {
+    padding: 50px 20px;
+  }
+
+  .header1-text h1 {
+    font-size: 28px;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+
+  .header1-text p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header1-top {
+    margin:0 ;
+    height: 0;
+    padding: 0px;
+  }
+
+  .header1-search input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .header1-text h1 {
+    font-size: 24px;
+    margin-top: 80px;
+  }
+
+  .header1-text p {
+    font-size: 12px;
+  }
+
+  .header1-account button {
+    margin-right: 20px;
+    margin-top: 20px;
+    top: 10px; /* Adjust the position for even smaller screens */
+    right: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    z-index: 10;
+  }
+}
