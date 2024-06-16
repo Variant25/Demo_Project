@@ -13,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  width: 100%; /* Ensure it spans the full width */
+  box-sizing: border-box; /* Include padding in the element's total width */
 }
 
 .header1-logo img {
@@ -46,6 +48,8 @@
 .header1-content {
   padding: 100px 20px;
   height: 200px;
+  width: 100%; /* Ensure it spans the full width */
+  box-sizing: border-box; /* Include padding in the element's total width */
 }
 
 .header1-text h1 {
@@ -109,9 +113,11 @@
   .header1-account a span {
     display: none;
   }
+
   .header1-account a {
     color: #fff;
   }
+
   .header1-account button {
     display: block;
     position: absolute; /* Position it absolutely relative to header1 */
@@ -142,7 +148,7 @@
 
 @media (max-width: 576px) {
   .header1-top {
-    margin:0 ;
+    margin: 0;
     height: 0;
     padding: 0px;
   }

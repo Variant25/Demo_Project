@@ -1,5 +1,5 @@
-::-webkit-scrollbar {
-  width: 0;
+body {
+  overflow-x: hidden; 
 }
 
 .container {
@@ -61,13 +61,21 @@
 
 .btn-write,
 .btn-join {
-  background-color: #007bff;
-  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
+}
+
+.btn-write {
+  background-color: #E5E5E5;
+  color: #000;
+}
+
+.btn-join {
+  background-color: #007bff;
+  color: white;
 }
 
 .main-content {
@@ -142,7 +150,7 @@
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  object-fit: cover; /* Ensure the image keeps its aspect ratio */
+  object-fit: cover;
 }
 
 .post-author-name {
@@ -210,7 +218,9 @@
   .main-content {
     flex-direction: column;
   }
-
+.container{
+  width: 325px;
+}
   .post-container {
     margin-right: 0;
   }
@@ -226,6 +236,10 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -250,6 +264,10 @@
 }
 
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header {
     padding: 10px;
   }
