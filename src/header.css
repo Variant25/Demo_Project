@@ -1,0 +1,64 @@
+/* src/Header.css */
+.header1 {
+
+    width: 100%;
+    background: url('./Rectangle 2.png') no-repeat center center;
+    background-size: cover;
+    color: #000;
+  }
+  
+  .header1-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Semi-transparent background */
+  }
+  
+  .header1-logo img {
+    height: 15px;
+    margin-left: 20px;
+  }
+  
+ .header1-search input{
+    background-color: #E5E5E5; 
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    
+  }
+  
+  .header1-account a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header1-account span {
+    color: #0073b1; /* Blue color */
+  }
+  
+  .header1-content {
+    padding: 100px 20px;
+  height: 200px;
+   
+  }
+  
+  .header1-text h1 {
+    font-size: 36px;
+    margin-top:150px;
+    margin-bottom: 0;
+    color: white;
+    margin-left: 200px;
+    
+  }
+  
+  .header1-text p {
+    font-size: 18px;
+    margin-left: 200px;
+    color: #fff;
+    margin-top: 0;
+  }
+ 
